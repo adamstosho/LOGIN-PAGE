@@ -64,8 +64,8 @@ const login = (email, password) => {
 form.addEventListener("submit", function (event) {
   event.preventDefault(); // Prevent form from refreshing the page
 
-  const email = emailInput.value;
-  const password = passwordInput.value;
+  const email = emailInput.value.trim();
+  const password = passwordInput.value.trim();
   // (.value )help gets the value entered in the email field.
 
   const result = login(email, password); // Used to call the login function based on what is stored above.
